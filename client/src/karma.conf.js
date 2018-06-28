@@ -5,6 +5,10 @@ module.exports = function(config) {
     config.set({
         basePath: "",
         frameworks: ["jasmine", "@angular-devkit/build-angular"],
+        files: [
+            '**/*.ts',
+            '**/*.spec.ts'
+        ],
         plugins: [
             require("karma-jasmine"),
             //   require('karma-chrome-launcher'),
@@ -17,19 +21,20 @@ module.exports = function(config) {
         client: {
             clearContext: false // leave Jasmine Spec Runner output visible in browser
         },
-        coverageIstanbulReporter: {
-            dir: require("path").join(__dirname, "../coverage"),
-            reports: ["html", "lcovonly"],
-            fixWebpackSourcePaths: true
+        // coverageIstanbulReporter: {
+        //     dir: require("path").join(__dirname, "../coverage"),
+        //     reports: ["lcov"],
+        //     fixWebpackSourcePaths: true
+        // },
+        coverageReporter: {
+            includeAllSources: true,
+            dir: 'coverage/',
+            reporters: [
+                { type: "lcov" }
+            ]
         },
         preprocessors: {
-            './**/*.ts': 'coverage'
-        },
-        coverageReporter: {
-            reporters: [
-                { type: 'lcov' },
-                { type: 'html' }
-            ]
+            '**/*.ts': ['coverage']
         },
         reporters: ["progress", "kjhtml", "coverage"],
         port: 9876,
