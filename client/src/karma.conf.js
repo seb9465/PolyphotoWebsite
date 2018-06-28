@@ -11,6 +11,7 @@ module.exports = function(config) {
             require("karma-firefox-launcher"),
             require("karma-jasmine-html-reporter"),
             require("karma-coverage-istanbul-reporter"),
+            require("karma-coverage"),
             require("@angular-devkit/build-angular/plugins/karma")
         ],
         client: {
@@ -21,7 +22,15 @@ module.exports = function(config) {
             reports: ["html", "lcovonly"],
             fixWebpackSourcePaths: true
         },
-        reporters: ["progress", "kjhtml"],
+        preprocessors: {
+            '**/*.ts': 'coverage'
+        },
+        coverageReporter: {
+            reporters: [
+                { type: 'lcov' }
+            ]
+        },
+        reporters: ["progress", "kjhtml", "coverage"],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
