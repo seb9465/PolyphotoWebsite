@@ -6,8 +6,8 @@ module.exports = function(config) {
         basePath: "",
         frameworks: ["jasmine", "@angular-devkit/build-angular"],
         files: [
-            '**/*.ts',
-            '**/*.spec.ts'
+            'app/**/*.ts',
+            'app/**/*.spec.ts'
         ],
         plugins: [
             require("karma-jasmine"),
@@ -34,7 +34,7 @@ module.exports = function(config) {
             ]
         },
         preprocessors: {
-            '**/*.ts': ['coverage']
+            'app/**/*.ts': ['coverage']
         },
         reporters: ["progress", "kjhtml", "coverage"],
         port: 9876,
