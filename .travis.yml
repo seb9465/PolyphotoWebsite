@@ -1,0 +1,9 @@
+language: nodejs
+
+before_script:
+- cd client/
+- npm i npm@latest -g
+- npm install
+
+script:
+- npm run build
