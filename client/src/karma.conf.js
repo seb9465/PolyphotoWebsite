@@ -23,11 +23,12 @@ module.exports = function(config) {
             fixWebpackSourcePaths: true
         },
         preprocessors: {
-            'src/**/*.ts': 'coverage'
+            './**/*.ts': 'coverage'
         },
         coverageReporter: {
             reporters: [
-                { type: 'lcov' }
+                { type: 'lcov' },
+                { type: 'html' }
             ]
         },
         reporters: ["progress", "kjhtml", "coverage"],
