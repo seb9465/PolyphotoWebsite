@@ -12,4 +12,4 @@ script:
 - npm run build
 - npm run test
 - codecov
-- "cat ./coverage.lcov | ./node_modules/coveralls/bin/coveralls.js"
+- "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
