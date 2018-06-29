@@ -36,7 +36,7 @@ module.exports = function(config) {
         preprocessors: {
             'app/**/*.ts': ['coverage']
         },
-        reporters: ["progress", "kjhtml", "coverage"],
+        reporters: ["progress", "kjhtml"],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,

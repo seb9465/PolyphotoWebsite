@@ -10,6 +10,6 @@ before_script:
 
 script:
 - npm run build
-- npm run test
+- ng test --watch=false --code-coverage
 - codecov
 - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
