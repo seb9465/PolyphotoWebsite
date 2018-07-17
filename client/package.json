@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test-chrome": "ng test --watch=true --browsers=Chrome",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -35,6 +36,7 @@
     "codecov": "^3.0.2",
     "codecov.io": "^0.1.6",
     "codelyzer": "~4.2.1",
+    "coveralls": "^3.0.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^1.7.1",

@@ -11,7 +11,7 @@ module.exports = function(config) {
         ],
         plugins: [
             require("karma-jasmine"),
-            //   require('karma-chrome-launcher'),
+            require('karma-chrome-launcher'),
             require("karma-firefox-launcher"),
             require("karma-jasmine-html-reporter"),
             require("karma-coverage-istanbul-reporter"),
@@ -36,7 +36,7 @@ module.exports = function(config) {
         preprocessors: {
             'app/**/*.ts': ['coverage']
         },
-        reporters: ["progress", "kjhtml", "coverage"],
+        reporters: ["progress", "kjhtml"],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
