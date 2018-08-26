@@ -23,7 +23,7 @@ mongoose.connect(mongoURL, (err) => {
 
 // Routing
 // Configure port
-const port: number = 8080;
+const port: number = 8070;
 // Listen to port
 app.listen(port);
 console.log(`Server is running on port: ${port}`);
