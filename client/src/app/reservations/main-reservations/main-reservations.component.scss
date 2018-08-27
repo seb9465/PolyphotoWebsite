@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+
+
+.main-reservations {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: $main-reservations-height;
+
+    .row {
+        margin: 0px;
+    }
+    
+}

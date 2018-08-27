@@ -1,0 +1,4 @@
+$header-height: 48px;
+$footer-height: 40px;
+$full-height: 100%;
+$main-reservations-height: calc(#{$full-height} - #{$header-height} - #{$footer-height});

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './common/header/header.component';
+import { MainReservationsComponent } from './reservations/main-reservations/main-reservations.component';
 
 const routes: Routes = [
-    // { path: 'header', component: HeaderComponent },
     // { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     // { path: 'detail/:id', component: HeroDetailComponent },
+    { path: 'reservations', component: MainReservationsComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.wrapper {
+    position: absolute;
+    height: $footer-height;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    float: left;
+
+    p {
+        vertical-align: middle;
+    }
+
+}

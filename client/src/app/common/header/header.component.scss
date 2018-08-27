@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    height: $header-height;
+    width: 100%;
+    text-align: center;
+
+    .header-btn {
+        margin-right: 10px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+}
