@@ -22,8 +22,14 @@ mongoose.connect(mongoURL, (err) => {
   });
 
 // Routing
+router.get('/', (request, response) => {
+    response.status(200).send({message: 'Hello World!'})
+});
+//Set app to use express backend router
+app.use(router);
+
 // Configure port
-const port: number = 8070;
+const port: number = 8080;
 // Listen to port
 app.listen(port);
 console.log(`Server is running on port: ${port}`);

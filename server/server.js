@@ -22,6 +22,11 @@ mongoose.connect(mongoURL, function (err) {
     }
 });
 // Routing
+router.get('/', function (request, response) {
+    response.status(200).send({ message: 'Hello World!' });
+});
+//Set app to use express backend router
+app.use(router);
 // Configure port
 var port = 8080;
 // Listen to port
