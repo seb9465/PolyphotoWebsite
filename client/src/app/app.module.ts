@@ -10,6 +10,8 @@ import { ReservationsHeaderComponent } from './reservations/reservations-header/
 import { MainCalendarComponent } from './reservations/main-calendar/main-calendar.component';
 import { SecondaryCalendarsComponent } from './reservations/secondary-calendars/secondary-calendars.component';
 import { ReservationsPopupComponent } from './reservations/reservations-popup/reservations-popup.component';
+import { CalendarComponent } from './reservations/calendar/calendar/calendar.component';
+import { CalendarCellComponent } from './reservations/calendar/calendar-cell/calendar-cell.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ReservationsPopupComponent } from './reservations/reservations-popup/re
     ReservationsHeaderComponent,
     MainCalendarComponent,
     SecondaryCalendarsComponent,
-    ReservationsPopupComponent
+    ReservationsPopupComponent,
+    CalendarComponent,
+    CalendarCellComponent
   ],
   imports: [
     BrowserModule,
